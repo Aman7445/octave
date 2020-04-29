@@ -19,9 +19,17 @@ $(document).ready(function() {
 function setTrack(trackId, newPlaylist, play) {
     $.post("includes/handlers/ajax/getSongJson.php", { songId: trackId }, function(data) {
         var track = JSON.parse(data);
-        console.log(track)
+        $(".trackName span").text(track.title); 
         audioElement.setTrack(track.path);
         audioElement.play();
+        $.post("includes/handlers/ajax/getArtistjson.php", { artistId: track.artist }, function(data) {
+            var artist = JSON.parse(data);
+            $(".artistName span").text(artist.name); 
+        });
+        $.post("includes/handlers/ajax/getAlbumjson.php", { albumId: track.album }, function(data) {
+            var album = JSON.parse(data);
+            $(".albumLink img").attr("src", album.artworkPath); 
+        });
     });
     
     if(play == true) {
@@ -48,14 +56,14 @@ function pauseSong() {
                 <div id="nowPlayingLeft">
                     <div class="content">
                         <span class="albumLink">
-                            <img class="albumart" src="https://i.pinimg.com/originals/27/56/e6/2756e6e14a8206f3a702558bec753661.jpg" alt="albumart">
+                            <img class="albumart" src="" alt="albumart">
                         </span>
                         <div class="trackInfo">
                             <span class="trackName">
-                                <span>Happy Birthday</span>
+                                <span></span>
                             </span>
                             <span class="artistName">
-                                <span>Reece Kenedy</span>
+                                <span></span>
                             </span>
                         </div>
                     </div>
