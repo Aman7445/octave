@@ -6,7 +6,7 @@ if(isset($_POST['songId'])){
     
     $query = mysqli_query($con, "SELECT * FROM songs WHERE id ='$songsId'");
     
-    $resultArray = mysqli_fect_array($query);
+    $resultArray = mysqli_fetch_array($query);
     
     echo json_encode($resultArray);
 }
