@@ -1,6 +1,6 @@
 <div id="navbarContainer">
                 <nav class="navbar">
-                    <span onclick ="openPage('index.php')" class="logo">
+                    <span onclick ="openPage('index1.php')" class="logo">
                         <img src="assets/images/icons/logo.png" alt="logo">Octave 
                     </span>
                     <div class="group">
