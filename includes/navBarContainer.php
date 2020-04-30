@@ -1,8 +1,8 @@
 <div id="navbarContainer">
                 <nav class="navbar">
-                    <a href="index.php" class="logo">
+                    <span onclick ="openPage('index1.php')" class="logo">
                         <img src="assets/images/icons/logo.png" alt="logo">Octave 
-                    </a>
+                    </span>
                     <div class="group">
                         <div class="navItem">
                             <a href="search.php" class="navItemLink">Search

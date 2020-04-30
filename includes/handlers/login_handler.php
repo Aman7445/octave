@@ -8,7 +8,7 @@ if(isset($_POST['loginButton'])){
     
     if($result == true){
         $_SESSION['userLoggedIn'] = $username;
-        header("Location: index.php");
+        header("Location: index1.php");
     }
 }
 ?>
