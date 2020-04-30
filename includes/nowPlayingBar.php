@@ -153,11 +153,11 @@ function setTrack(trackId, newPlaylist, play) {
         });
     
         audioElement.setTrack(track);
-    });
-    
-    if(play == true) {
-        audioElement.play();   
+
+        if(play == true) {
+            playSong();   
     }   
+    });
 }
 
 function playSong() {
