@@ -10,22 +10,22 @@ else {
 ?>
 <div class="searchContainer">
     <h4>Search for an artist, album or song</h4>
-    <input type="text" class="searchInput" value="<?php echo $term; ?>" placeholder="Start typing..." onfocus="this.value = this.value">
+    <input type="text" class="searchInput" onfocus="this.value = this.value" value="<?php echo $term; ?>" placeholder="Start typing...">
 </div>
 
 
 
 <script>
     $(".searchInput").focus();
-    $(function() {
-       
 
+    $(function() {
         $(".searchInput").keyup(function() {
-            clearTimeout(timer);
-            timer = setTimeout(function() {
-                var val = $(".searchInput").val();
-                openPage("search.php?term=" + val);
-            },2000);
+		clearTimeout(timer);
+
+		timer = setTimeout(function() {
+			var val = $(".searchInput").val();
+			openPage("search.php?term=" + val);
+		}, 2000);
         })
     })
 </script>
