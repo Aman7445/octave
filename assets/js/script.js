@@ -39,6 +39,13 @@ $(document).on("change", "select.playlist", function() {
 	});
 });
 
+function logout() {
+    $.post("includes/handlers/ajax/logout.php", function() {
+        location.reload();
+     });
+}
+
+
 function openPage(url) {
     
     if(timer != null){
@@ -67,7 +74,7 @@ function removeFromPlaylist(button,playlistId) {
 				return;
 			}
 
-			openPage("playlist.phpid=" + playlistId);
+			openPage("playlist.php?id=" + playlistId);
 		});
 }
 
