@@ -1,0 +1,78 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    color: #8e8e8e;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 40%;
+    margin-top: 7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 40px;
+    margin-bottom: 0rem;
+}  
+
+label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+input {
+    width: 50%;
+    height: 2.1rem;
+    border: 2px solid #8e8e8e;
+    border-radius: 4px;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    min-width: 130px;
+    border-radius: 500px;
+    background-color: #d60c49;
+    border-color: #d60c49;
+    margin-bottom: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #d60c49;
+    border-color: #d60c49;
+}
+
+::placeholder { 
+    opacity: 0.5; 
+  }
+  
+  :-ms-input-placeholder { 
+    opacity: 0.5;
+  }
+  
+  ::-ms-input-placeholder { 
+    opacity: 0.5;
+  }
+
+  a {
+    font-weight: 200;
+    color:#8e8e8e;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #5e5e5e;
+  }
