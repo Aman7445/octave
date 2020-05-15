@@ -26,9 +26,10 @@ else {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Octave</title>
+    <link rel="shortcut icon" href="assets/images/icons/logo.ico">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>   
 </head>
 <body>
      <div id="mainContainer">
